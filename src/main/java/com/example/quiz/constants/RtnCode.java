@@ -10,8 +10,10 @@ public enum RtnCode {
 	TIME_FORMAT_ERROR(400, "Time format error!!"), //
 	QUIZ_ID_ERROR(400, "Quiz id error!!"), //
 	QUESTION_NO_ANSWER(400, "Question no answer!!"), //
-	DUPLICATED_QUIZ_ANSWER(400, "Duplicated quiz answer!!"),//
-	QUIZ_ID_DOES_NOT_MATCH(400,"Quiz id not match");
+	DUPLICATED_QUIZ_ANSWER(400, "Duplicated quiz answer!!"), //
+	QUIZ_ID_DOES_NOT_MATCH(400, "Quiz id not match"), //
+	DELETE_QUIZ_ERROR(400, "Delete quiz error!!"), //
+	SAVE_QUIZ_ERROR(400, "Save quiz error!!");
 
 	private int code;
 
@@ -29,5 +31,9 @@ public enum RtnCode {
 	public String getMessage() {
 		return message;
 	}
+
+	public static final int NOT_FOUND_CODE = 404;
+
+	public static final int ERROR_CODE = 400;
 
 }

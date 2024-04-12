@@ -34,4 +34,6 @@ public class QuizServiceController {
 	public StatisticsRes statistics(@RequestParam(value = "quiz_id")int quizId) {
 		return quizService.statistics(quizId);
 	}
+	
+	
 }

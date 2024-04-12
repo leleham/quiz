@@ -25,4 +25,6 @@ public interface QuizService {
 
 	public StatisticsRes statistics(int quizId);
 
+	public BaseRes objMapper(String str);
+
 }
